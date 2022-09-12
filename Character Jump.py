@@ -65,11 +65,11 @@ while Run:
     Clocks.tick(fps)
     for event in pygame.event.get():
         if event.type==pygame.QUIT:
-            Run==False
+            Run = False
             sys.exit()
     keypress = pygame.key.get_pressed()
     if keypress[pygame.K_ESCAPE]:
-            Run==False
+            Run = False
             sys.exit()
     if keypress[pygame.K_SPACE]:
            jumping = True
